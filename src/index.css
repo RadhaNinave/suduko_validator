@@ -1,0 +1,79 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.sudoku-card {
+  max-width: 440px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #555;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0;
+  outline: none;
+}
+
+.cell:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+}
+
+
+
+.cell.invalid {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.btn-validate {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-clear {
+  background-color: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-clear:hover {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+}
+
+.message {
+  font-size: 0.85rem;
+  color: #111827;
+}
